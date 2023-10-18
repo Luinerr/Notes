@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="12dp"
+    >
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/imageCard"
+                android:layout_width="325dp"
+                android:layout_height="121dp"
+                android:src="@drawable/note_rectangle"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:layout_editor_absoluteY="0dp">
+
+            </ImageView>
+            <TextView
+                android:id="@+id/h1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="10dp"
+                android:text="Подготовка макетов к реализации"
+                android:fontFamily="@font/golos"
+                android:textSize="16dp"
+                android:lineHeight="18sp"
+                app:layout_constraintTop_toTopOf="@+id/imageCard"
+                app:layout_constraintLeft_toLeftOf="@+id/imageCard"
+                >
+
+            </TextView>
+            <TextView
+                android:id="@+id/bodyText"
+                android:layout_width="303dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Также как современная методология разработки выявляет срочную потребность глубокомысленных рассуждений. С учётом сложившейся... "
+                android:fontFamily="@font/golos"
+                android:textSize="14dp"
+                android:lineHeight="18sp"
+
+                app:layout_constraintTop_toBottomOf="@+id/h1"
+                app:layout_constraintLeft_toLeftOf="@+id/h1">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/dateTime"
+                app:layout_constraintTop_toBottomOf="@+id/bodyText"
+                app:layout_constraintRight_toRightOf="@+id/bodyText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10 минут назад"
+                android:layout_marginTop="-12dp"
+                android:fontFamily="@font/golos"
+                android:textSize="10dp"
+                android:textColor="#949292"
+
+
+                >
+
+            </TextView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>
