@@ -26,6 +26,7 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.ViewHolder> 
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = inflater.inflate(R.layout.note_item, parent, false);
+
         return new ViewHolder(view);
     }
 
@@ -46,7 +47,7 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.ViewHolder> 
         final TextView headView, bodyView, dateView;
         ViewHolder(View view) {
             super(view);
-            headView = view.findViewById(R.id.h1);
+            headView = view.findViewById(R.id.h1Notes);
             bodyView = view.findViewById(R.id.bodyText);
             dateView = view.findViewById(R.id.dateTime);
         }
